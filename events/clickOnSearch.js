@@ -1,3 +1,4 @@
+
 function clickOnSearch(){
 
 	artistName = $("#nameInput").val();
@@ -7,5 +8,11 @@ function clickOnSearch(){
 		return;
 	}
 
-	musicContentClient.getArtistsByName.call(artistName);
+	scriptLoader.getScript('clients/music_content_client.js', () => {
+		scriptLoader.getScript('config/music_content_client_config.js', () => {
+
+			musicContentClient.getArtistsByName.call(artistName);
+
+		})
+	});
 }
