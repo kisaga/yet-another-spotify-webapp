@@ -1,4 +1,4 @@
-songProperties = {
+songView = {
 	songDiv: function (data){
 		return $('<div/>', {
 			id: "song_" + data.id,
@@ -6,4 +6,4 @@ songProperties = {
 			click: clickOnSong
 		});
 	}
-}
+};

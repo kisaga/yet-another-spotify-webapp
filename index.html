@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Yet Another Spotify</title>
+
+	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- properties scripts -->
-	<script src="properties/searchProperties.js"></script>
-	<script src="properties/artistProperties.js"></script>
-	<script src="properties/songProperties.js"></script>
+
 	
+
+	<!-- client -->
+	<script src="clients/music_content_client.js"></script>
+	<script src="config/music_content_client_config.js"></script>
+
+	<!-- events -->
+	<script src="events/clickOnSearch.js"></script>
+	<script src="events/clickOnArtist.js"></script>
+	<script src="events/clickOnSong.js"></script>
+	
+	<!-- views -->
+	<script src="views/artist.js"></script>
+	<script src="views/song.js"></script>
+
+	<!-- dom -->
+	<script src="dom/music_content_manipulator.js"></script>
 </head>
 <body>
 
@@ -22,10 +38,7 @@
 		
 	</div>
 
+	<script src="events/init.js"></script>
 
-	<!-- logic scripts -->
-	<script src="logic/search.js"></script>
-	<script src="logic/artist.js"></script>
-	<script src="logic/song.js"></script>
 </body>
 </html>
