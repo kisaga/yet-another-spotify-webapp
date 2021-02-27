@@ -35,7 +35,7 @@ musicContentClient = {
 		cache: {},
 		call: function (artistId) {
 			if(this.cache[artistId]){
-				musicContentMutator.insertArtists(this.cache[artistId]);
+				musicContentMutator.insertSongs(this.cache[artistId]);
 			}else{
 				this.tempParameterValue = artistId;
 				$.ajax({
